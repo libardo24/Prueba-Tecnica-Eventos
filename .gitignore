@@ -1,6 +1,6 @@
 .env
 backend/.env
-backend/.env
+
 
 # Logs frontend
 frontend/eventos-app/logs
