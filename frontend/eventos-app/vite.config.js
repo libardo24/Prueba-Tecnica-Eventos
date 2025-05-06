@@ -24,7 +24,7 @@ export default defineConfig({
       },
     },
     coverage: {
-      provider: 'c8',
+      provider: 'v8',
       all: true,
       include: ['src/**/*.{js,vue}'],
       exclude: ['**/node_modules/**', '**/tests/**'],

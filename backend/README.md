@@ -11,7 +11,8 @@ backend/
 │   ├── services/          # Lógica de negocio
 │   ├── schemas/           # Esquemas de validación
 │   └── main.py            # Punto de entrada de la aplicación
-├── Alembic/            # Migraciones de la base de datos (Alembic)
+├── tests                  # test unitarios
+├── Alembic/               # Migraciones de la base de datos (Alembic)
 ├── Dockerfile             # Configuración de Docker para el backend
 ├── pyproject.toml         # Configuración de Poetry
 └── README.md              # Este archivo
@@ -66,3 +67,6 @@ Este proyecto incluye documentación interactiva generada con Swagger UI.
 Una vez que la API esté corriendo, accede a la documentación en:
 
 👉 http://localhost:5000/docs
+
+
+las coverturas de los test se ubican en la carpeta htmlcov

@@ -291,10 +291,10 @@ bash
 
 npm run test -- tests/unit/LoginView.spec.js
 
-Cobertura de pruebas (si está configurado):
+Cobertura de pruebas:
 bash
-
 npm run test:coverage
+- **Ubicación del reporte**: La carpeta `coverage/` contiene el reporte de cobertura. Abre `coverage/index.html` en un navegador para ver el reporte visual. por temas de tiempo(Trabajo actualmente) no logre hacer la cobertura que me gustaria.
 ## Endpoints de la API
 
 los endpoints utilizados son:
