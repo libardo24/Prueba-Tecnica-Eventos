@@ -1,0 +1,57 @@
+# 🗓️ Mis Eventos
+
+Aplicación web compuesta por un frontend en Vue.js y un backend en Python (Flask), orquestada con Docker Compose y usando PostgreSQL como base de datos.
+
+---
+
+## 📦 Estructura del proyecto
+mis-eventos/
+├── backend/ # API backend (Flask o Django)
+│ └── .env # Variables de entorno del backend
+├── frontend/ # Aplicación Vue.js
+├── docker-compose.yml
+├── .env # Variables de entorno generales (Docker)
+└── README.md
+
+## ⚙️ Requisitos
+
+- Docker
+- Docker Compose
+
+---
+
+## 🚀 Primeros pasos
+
+### 1. Clona el repositorio
+
+```bash
+git clone https://github.com/libardo24/Prueba-Tecnica-Eventos.git
+cd Prueba-Tecnica-Eventos
+
+2. Crea el archivo .env en la raíz del proyecto
+Crea un archivo llamado .env en la raíz (mis-eventos/.env) con el siguiente contenido:
+
+DB_USER=postgres
+DB_PASSWORD=password
+DB_HOST=db
+DB_PORT=5432
+DB_NAME=mis_eventos
+DATABASE_URL=postgresql+psycopg2://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}
+
+3. Crea el archivo .env dentro de la carpeta backend/
+
+# backend/.env
+JWT_SECRET_KEY="super-secret"
+DATABASE_URL=postgresql+psycopg2://postgres:password@localhost:5432/mis_eventos
+
+4. Levanta los servicios con Docker Compose
+
+docker-compose up --build
+
+Esto levantará:
+
+Contenedor de PostgreSQL (db)
+
+Backend (Flask)
+
+Frontend (Vue)

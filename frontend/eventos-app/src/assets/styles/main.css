@@ -1,0 +1,68 @@
+:root {
+    --primary-color: #6ac6dc;
+    --primary-dark: #4a9eb3;
+    --background-color: #ffffff;
+    --text-dark: #333333;
+    --text-light: #ffffff;
+    --border-light: #e0e0e0;
+    --secondary-background: #f5f5f5;
+    --hover-light: #e6f7fa;
+}
+
+.v-application {
+    background: var(--background-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--primary-color);
+}
+
+.v-btn.primary {
+    background-color: var(--primary-color) !important;
+    color: var(--text-light) !important;
+}
+
+.v-btn.primary:hover {
+    background-color: var(--primary-dark) !important;
+}
+
+.v-btn.auth-btn {
+    background: var(--background-color) !important;
+    color: var(--primary-color) !important;
+}
+
+.v-btn.auth-btn:hover {
+    background: var(--hover-light) !important;
+}
+
+.v-text-field :deep(.v-field .v-icon) { /* Más específico */
+    color: var(--primary-color);
+}
+
+.v-text-field :deep(.v-field--focused) {
+    border-color: var(--primary-dark);
+}
+
+.v-data-table {
+    background: var(--background-color);
+    border: 1px solid var(--primary-color);
+}
+
+.v-data-table :deep(.v-data-table-header th) {
+    background-color: var(--primary-color) !important;
+    color: var(--text-light) !important;
+}
+
+.v-data-table :deep(.v-data-table-footer) {
+    background: var(--secondary-background);
+}
+
+.v-alert {
+    border-color: var(--primary-color) !important;
+    color: var(--primary-color) !important;
+}

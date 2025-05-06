@@ -1,0 +1,78 @@
+.app-bar .v-app-bar {
+    background: var(--primary-color) !important;
+    elevation: 2;
+    padding: 0 16px;
+}
+
+.app-bar .v-toolbar-title {
+    color: var(--text-light) !important;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.app-bar .nav-icon-btn {
+    color: var(--text-light) !important;
+}
+
+.app-bar .nav-icon-btn:hover {
+    color: var(--primary-dark) !important;
+}
+
+.app-bar .v-btn.authenticated-btn,
+.app-bar .v-btn.auth-btn {
+    color: var(--text-light) !important;
+    text-transform: none;
+    font-weight: 500;
+    margin: 0 8px;
+    transition: all 0.3s ease;
+}
+
+.app-bar .v-btn.authenticated-btn:hover,
+.app-bar .v-btn.auth-btn:hover {
+    background: var(--primary-dark) !important;
+}
+
+.app-bar .nav-drawer {
+    background: var(--background-color) !important;
+    width: 240px !important;
+}
+
+.app-bar .nav-item {
+    color: var(--primary-color) !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.app-bar .nav-item:hover,
+.app-bar .nav-item.v-list-item--active {
+    background: var(--hover-light) !important;
+    color: var(--primary-dark) !important;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+    .app-bar .v-app-bar {
+        padding: 0 8px;
+    }
+
+    .app-bar .v-toolbar-title {
+        font-size: 1rem;
+    }
+
+    .app-bar .v-btn.authenticated-btn,
+    .app-bar .v-btn.auth-btn {
+        display: none; /* Ocultar botones en móviles */
+    }
+
+    .app-bar .nav-icon-btn {
+        margin-right: 8px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 960px) {
+    .app-bar .v-btn.authenticated-btn,
+    .app-bar .v-btn.auth-btn {
+        margin: 0 4px;
+        font-size: 0.9rem;
+    }
+}

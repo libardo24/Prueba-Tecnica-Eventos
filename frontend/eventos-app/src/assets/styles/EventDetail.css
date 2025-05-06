@@ -1,0 +1,190 @@
+/* Contenedor principal */
+.event-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+/* Tarjetas de evento y sesiones */
+.event-card,
+.session-card {
+    transition: all 0.3s ease;
+    background: var(--background-color);
+    border-radius: 12px !important;
+    border: 1px solid var(--border-light);
+}
+
+.event-card:hover,
+.session-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Asegurar que las tarjetas de sesiones tengan altura uniforme */
+.session-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.session-card .v-card-text {
+    flex-grow: 1;
+}
+
+/* Ajustes para botones en sesiones */
+.session-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 16px !important;
+    gap: 8px;
+    min-height: 60px;
+    background: var(--secondary-background);
+}
+
+.session-btn {
+    flex: 1;
+    min-width: 100px;
+    max-width: 120px;
+    text-transform: none !important;
+    border-radius: 8px !important;
+    height: 36px !important;
+    font-size: 0.85rem !important;
+    padding: 0 8px !important;
+    transition: all 0.3s ease;
+}
+
+.session-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Botones en tarjeta de evento */
+.event-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 16px !important;
+    gap: 8px;
+    min-height: 60px;
+    background: var(--secondary-background);
+}
+
+/* Botones generales */
+.v-btn {
+    text-transform: none !important;
+    border-radius: 8px !important;
+    padding: 0 16px !important;
+    height: 40px !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.v-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para botones primarios (definido en main.css, pero aseguramos compatibilidad) */
+.v-btn--variant-flat.v-btn--variant-contained {
+    box-shadow: none !important;
+}
+
+/* Espaciado entre botones */
+.v-card-actions .v-btn {
+    margin: 4px !important;
+}
+
+/* Títulos */
+h1,
+h2 {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* Formulario */
+.v-form .v-text-field,
+.v-form .v-textarea,
+.v-form .v-select {
+    border-radius: 8px !important;
+    margin-bottom: 16px !important;
+}
+
+/* Diálogos */
+.v-dialog .v-card {
+    border-radius: 12px !important;
+    overflow: hidden;
+    border: 1px solid var(--border-light);
+}
+
+.v-dialog .v-card-title {
+    background: var(--secondary-background);
+    border-bottom: 1px solid var(--border-light);
+}
+
+.v-dialog .v-card-actions {
+    border-top: 1px solid var(--border-light);
+    background: var(--secondary-background);
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.75rem !important;
+    }
+
+    h2 {
+        font-size: 1.5rem !important;
+    }
+
+    .v-btn {
+        font-size: 0.85rem !important;
+        height: 36px !important;
+        padding: 0 12px !important;
+    }
+
+    .event-actions,
+    .session-actions {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 12px !important;
+        min-height: auto;
+    }
+
+    .session-btn,
+    .event-actions .v-btn {
+        max-width: none;
+        width: 100%;
+        margin: 4px 0 !important;
+    }
+
+    .v-form .v-text-field,
+    .v-form .v-textarea,
+    .v-form .v-select {
+        margin-bottom: 12px !important;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 960px) {
+    .session-btn {
+        font-size: 0.8rem !important;
+        min-width: 80px;
+        max-width: 100px;
+    }
+
+    .event-actions .v-btn {
+        font-size: 0.9rem !important;
+        min-width: 100px;
+        max-width: 120px;
+    }
+}
+
+/* Mantener valores persistentes visibles */
+.persistent-value input,
+.persistent-value textarea {
+    color: var(--text-dark) !important;
+    opacity: 1 !important;
+}
+
+.persistent-value .v-field__input {
+    opacity: 1 !important;
+}

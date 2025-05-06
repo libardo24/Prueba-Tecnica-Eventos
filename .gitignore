@@ -1,0 +1,26 @@
+.env
+backend/.env
+backend/.env
+
+# Logs frontend
+frontend/eventos-app/logs
+frontend/eventos-app/*.log
+frontend/eventos-app/npm-debug.log*
+frontend/eventos-app/yarn-debug.log*
+frontend/eventos-app/yarn-error.log*
+frontend/eventos-app/pnpm-debug.log*
+frontend/eventos-app/lerna-debug.log*
+frontend/eventos-app/node_modules
+frontend/eventos-app/dist
+frontend/eventos-app/dist-ssr
+frontend/eventos-app/*.local
+frontend/eventos-app/# Editor directories and files
+frontend/eventos-app/.vscode/*
+frontend/eventos-app/!.vscode/extensions.json
+frontend/eventos-app/.idea
+frontend/eventos-app/.DS_Store
+frontend/eventos-app/*.suo
+frontend/eventos-app/*.ntvs*
+frontend/eventos-app/*.njsproj
+frontend/eventos-app/*.sln
+frontend/eventos-app/*.sw?
