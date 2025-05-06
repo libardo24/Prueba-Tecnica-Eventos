@@ -55,3 +55,5 @@ Contenedor de PostgreSQL (db)
 Backend (Flask)
 
 Frontend (Vue)
+
+app de vue corriendo en: http://localhost:5173/
